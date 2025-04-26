@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,10 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alya Dwi Arianty</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    header, nav, main, footer {
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .page-transition {
+      animation: slideIn 0.8s ease-in-out;
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+  </style>
 </head>
-<body>
+<body class="page-transition">
   <header>
-    <img src="profile.jpg" alt="Foto Profil" class="profile-img">
+    <img src="profile.jpeg" alt="Foto Profil" class="profile-img" style="width:150px; border-radius:50%;">
     <h1>Alya Dwi Arianty</h1>
     <p>Mahasiswa Pendidikan Kimia | Pecinta Kepenulisan</p>
   </header>
@@ -29,7 +44,7 @@
   </main>
 
   <footer>
-    <p>Hubungi: <a href="mailto:alyadwiariantyunimu@gmail.com">alyadwiariantyunimu@gmail.com</a></p>
+    <p>Hubungi: <a href="mailto:alyadwiariantyunimus@gmail.com">alyadwiariantyunimus@gmail.com</a></p>
   </footer>
 </body>
 </html>
